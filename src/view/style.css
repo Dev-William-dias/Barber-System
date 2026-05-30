@@ -1,0 +1,18 @@
+.custom-control:focused {
+    -fx-focus-color: #7c6f53;
+    -fx-faint-focus-color: transparent;
+}
+
+.menu-bar {
+    -fx-background-color: #18130d;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.backgroundPanel {
+    -fx-background-color: rgba(000,000,000,0.5);
+    -fx-border-radius: 10px;
+}

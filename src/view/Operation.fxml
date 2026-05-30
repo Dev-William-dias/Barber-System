@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="230.0" prefWidth="380.0" styleClass="backgroundPanel">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="14.0" layoutY="2.0" prefHeight="30.0" prefWidth="350.0" text="Agendamento" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="14.0" layoutY="38.0" prefHeight="30.0" prefWidth="350.0" promptText="Nome" styleClass="custom-control">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtContact" layoutX="14.0" layoutY="87.0" prefHeight="32.0" prefWidth="350.0" promptText="Contato" styleClass="custom-control">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="datePicker" layoutX="14.0" layoutY="130.0" prefHeight="32.0" prefWidth="180.0" promptText="Data" styleClass="custom-control" />
+            <Button layoutX="12.0" layoutY="178.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="350.0" text="Agendar">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtTime" layoutX="203.0" layoutY="130.0" prefHeight="32.0" prefWidth="161.0" promptText="Hora" styleClass="custom-control">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <TableView fx:id="tableAppointments" layoutX="14.0" layoutY="270.0" prefHeight="290.0" prefWidth="970.0" styleClass="custom-control">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="50.0" text="Id" />
+          <TableColumn fx:id="columnName" prefWidth="435.0" text="Nome" />
+            <TableColumn fx:id="columnDate" prefWidth="120.0" text="Data" />
+            <TableColumn fx:id="columnTime" prefWidth="120.0" text="Hora" />
+            <TableColumn prefWidth="75.0" />
+            <TableColumn prefWidth="75.0" />
+            <TableColumn prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

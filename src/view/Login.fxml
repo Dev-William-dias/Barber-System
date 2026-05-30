@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="315.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/http://javafx.com/javafx/23.0.5" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="315.0" fitWidth="336.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/logo.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="336.0" prefHeight="315.0" prefWidth="372.0" style="-fx-background-color: #fff;">
+         <children>
+            <TextField fx:id="txtEmail" layoutX="21.0" layoutY="32.0" prefHeight="40.0" prefWidth="336.0" promptText="E-mail">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="18.0" layoutY="102.0" prefHeight="40.0" prefWidth="336.0" promptText="senha">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnEnter" layoutX="96.0" layoutY="168.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text="Entrar">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExit" layoutX="146.0" layoutY="230.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="Sair" />
+            <Label layoutX="173.0" layoutY="283.0" text="v 0.0.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
