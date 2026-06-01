@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
@@ -40,7 +39,6 @@ public class Controller implements Initializable {
             anchorPane.getChildren().clear();
             anchorPane.setBackground(new Background(backgroundImage));
             anchorPane.getChildren().add(newPanel);
-
         } catch (IOException e) {
             System.out.println("loadPanel " + e.getMessage());
         }

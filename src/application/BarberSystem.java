@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import util.Log;
 
 public class BarberSystem extends Application {
 
@@ -23,14 +24,12 @@ public class BarberSystem extends Application {
 
             baseScene = new Scene(anchorPane);
             primaryStage.setScene(baseScene);
-            //primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/imgs/icons/invoice.png")));
             primaryStage.setResizable(false);
             primaryStage.setTitle("Barber System");
             primaryStage.show();
         } catch (IOException e) {
-            System.out.println("start: " + e.getMessage());
+            Log.save("start", e.getMessage());
         }
-
     }
 
     public static Scene getBaseScene() {
